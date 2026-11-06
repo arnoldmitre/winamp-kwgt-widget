@@ -1,14 +1,14 @@
 {
   "preset_info": {
     "version": 11,
-    "title": "Retro Amp (Winamp)",
-    "description": "Late-90s Winamp music player widget for Android home screens via KWGT",
-    "author": "Antigravity / Bryan Perdana",
+    "title": "Retro Amp (Liquid Glass Edition)",
+    "description": "Liquid Frosted Glass edition of the classic Winamp player for KWGT",
+    "author": "Antigravity / Arnold Mitre",
     "email": "omalauncher@local",
     "width": 720,
     "height": 360,
     "features": "MUSIC",
-    "release": 345007815,
+    "release": 345007816,
     "locked": false,
     "pflags": 0
   },
@@ -18,88 +18,98 @@
     "viewgroup_items": [
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Chassis_Shadow",
+        "internal_title": "Glass_Shadow",
+        "shape_type": "RECT",
+        "shape_width": 684.0,
+        "shape_height": 324.0,
+        "shape_corners": 18.0,
+        "paint_color": "#33000000"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "internal_title": "Glass_Border_Rim",
         "shape_type": "RECT",
         "shape_width": 680.0,
         "shape_height": 320.0,
-        "shape_corners": 6.0,
-        "paint_color": "#FF0E1014"
+        "shape_corners": 16.0,
+        "paint_color": "#59FFFFFF"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Chassis_Bevel",
+        "internal_title": "Glass_Body",
         "shape_type": "RECT",
-        "shape_width": 674.0,
-        "shape_height": 314.0,
-        "shape_corners": 5.0,
-        "paint_color": "#FF383D48"
+        "shape_width": 676.0,
+        "shape_height": 316.0,
+        "shape_corners": 15.0,
+        "paint_color": "#66141924"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Chassis_Face",
+        "internal_title": "Glass_Top_Reflection",
+        "position_offset_y": -78.0,
         "shape_type": "RECT",
-        "shape_width": 670.0,
-        "shape_height": 310.0,
-        "shape_corners": 4.0,
-        "paint_color": "#FF22252C"
+        "shape_width": 672.0,
+        "shape_height": 154.0,
+        "shape_corners": 14.0,
+        "paint_color": "#12FFFFFF"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "TitleBar_Bg",
-        "position_offset_y": -132.0,
+        "internal_title": "TitleBar_Glass_Bg",
+        "position_offset_y": -130.0,
         "shape_type": "RECT",
-        "shape_width": 660.0,
-        "shape_height": 30.0,
-        "shape_corners": 2.0,
-        "paint_color": "#FF1A1C22"
+        "shape_width": 656.0,
+        "shape_height": 32.0,
+        "shape_corners": 8.0,
+        "paint_color": "#2BFFFFFF"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "TitleBar_Line_Left",
         "position_offset_x": -180.0,
-        "position_offset_y": -132.0,
+        "position_offset_y": -130.0,
         "shape_type": "RECT",
-        "shape_width": 160.0,
+        "shape_width": 150.0,
         "shape_height": 2.0,
-        "paint_color": "#FF00FF66"
+        "paint_color": "#B300FFAA"
       },
       {
         "internal_type": "TextModule",
         "internal_title": "TitleBar_Text",
-        "position_offset_y": -132.0,
-        "text_expression": "RETRO AMP \u2022 WINAMP",
+        "position_offset_y": -130.0,
+        "text_expression": "RETRO AMP \u2022 LIQUID GLASS",
         "text_size": 13.0,
-        "paint_color": "#FFE5E9F0"
+        "paint_color": "#FFF8FAFC"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "TitleBar_Line_Right",
         "position_offset_x": 180.0,
-        "position_offset_y": -132.0,
+        "position_offset_y": -130.0,
         "shape_type": "RECT",
-        "shape_width": 160.0,
+        "shape_width": 150.0,
         "shape_height": 2.0,
-        "paint_color": "#FF00FF66"
+        "paint_color": "#B300FFAA"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "LCD_Bezel",
-        "position_offset_y": -36.0,
+        "internal_title": "LCD_Glass_Rim",
+        "position_offset_y": -34.0,
         "shape_type": "RECT",
-        "shape_width": 650.0,
-        "shape_height": 134.0,
-        "shape_corners": 2.0,
-        "paint_color": "#FF101216"
+        "shape_width": 656.0,
+        "shape_height": 136.0,
+        "shape_corners": 10.0,
+        "paint_color": "#3300FFAA"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "LCD_Screen",
-        "position_offset_y": -36.0,
+        "internal_title": "LCD_Smoked_Screen",
+        "position_offset_y": -34.0,
         "shape_type": "RECT",
-        "shape_width": 642.0,
-        "shape_height": 126.0,
-        "shape_corners": 2.0,
-        "paint_color": "#FF081009",
+        "shape_width": 652.0,
+        "shape_height": 132.0,
+        "shape_corners": 9.0,
+        "paint_color": "#80050E07",
         "internal_events": [
           {
             "type": "SINGLE_TAP",
@@ -112,275 +122,290 @@
         "internal_type": "TextModule",
         "internal_title": "LCD_Status",
         "position_offset_x": -250.0,
-        "position_offset_y": -80.0,
+        "position_offset_y": -78.0,
         "text_expression": "$if(mi(state) = PLAYING, \"\u25b6 PLAY\", if(mi(state) = PAUSED, \"\u275a\u275a PAUSE\", \"\u25a0 STOP\"))$",
         "text_size": 12.0,
-        "paint_color": "#FF00FF66"
+        "paint_color": "#FF00FFAA"
       },
       {
         "internal_type": "TextModule",
         "internal_title": "LCD_Stereo",
         "position_offset_x": -160.0,
-        "position_offset_y": -80.0,
+        "position_offset_y": -78.0,
         "text_expression": "$if(mi(state) = PLAYING, \"STEREO\", \"MONO\")$",
         "text_size": 12.0,
-        "paint_color": "#FF00EE55"
+        "paint_color": "#FF00EE88"
       },
       {
         "internal_type": "TextModule",
         "internal_title": "LCD_Kbps",
         "position_offset_x": -70.0,
-        "position_offset_y": -80.0,
+        "position_offset_y": -78.0,
         "text_expression": "192 kbps 44 kHz",
         "text_size": 11.0,
-        "paint_color": "#FF00AA44"
+        "paint_color": "#9900FFAA"
       },
       {
         "internal_type": "TextModule",
-        "internal_title": "LCD_Time",
-        "position_offset_x": 200.0,
-        "position_offset_y": -76.0,
+        "internal_title": "LCD_Clock",
+        "position_offset_x": 195.0,
+        "position_offset_y": -74.0,
         "text_expression": "$tf(mi(pos), mm:ss)$",
         "text_size": 30.0,
-        "paint_color": "#FF00FF66"
+        "paint_color": "#FF00FFAA"
       },
       {
         "internal_type": "TextModule",
         "internal_title": "LCD_Total",
         "position_offset_x": 275.0,
-        "position_offset_y": -74.0,
+        "position_offset_y": -72.0,
         "text_expression": "$if(mi(len) > 0, \"/ \" + tf(mi(len), mm:ss), \"\")$",
         "text_size": 13.0,
-        "paint_color": "#FF00AA44"
+        "paint_color": "#9900FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_1",
         "position_offset_x": -260.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 3 + 0) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_2",
         "position_offset_x": -248.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 4 + 7) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_3",
         "position_offset_x": -236.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 5 + 14) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_4",
         "position_offset_x": -224.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 6 + 21) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_5",
         "position_offset_x": -212.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 7 + 28) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_6",
         "position_offset_x": -200.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 3 + 35) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_7",
         "position_offset_x": -188.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 4 + 42) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_8",
         "position_offset_x": -176.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 5 + 49) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_9",
         "position_offset_x": -164.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 6 + 56) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FF00FF66"
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_10",
         "position_offset_x": -152.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 7 + 63) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FFFFCC00"
+        "paint_color": "#E6FFD500"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_11",
         "position_offset_x": -140.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 3 + 70) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FFFFCC00"
+        "paint_color": "#E6FFD500"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_SpecBar_12",
         "position_offset_x": -128.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 8.0,
         "shape_height": 20.0,
+        "shape_corners": 1.5,
         "internal_formulas": {
           "shape_height": "$if(mi(state) = PLAYING, 6 + (df(S) * 4 + 77) % 36, 4)$"
         },
         "internal_toggles": {
           "shape_height": 10
         },
-        "paint_color": "#FFFFCC00"
+        "paint_color": "#E6FFD500"
       },
       {
         "internal_type": "ShapeModule",
         "internal_title": "LCD_Marquee_Box",
         "position_offset_x": 80.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "shape_type": "RECT",
         "shape_width": 380.0,
         "shape_height": 30.0,
-        "paint_color": "#FF050C06"
+        "shape_corners": 6.0,
+        "paint_color": "#4D030804"
       },
       {
         "internal_type": "TextModule",
         "internal_title": "LCD_Marquee_Text",
         "position_offset_x": 80.0,
-        "position_offset_y": -34.0,
+        "position_offset_y": -32.0,
         "text_expression": "$if(mi(state) = PLAYING | mi(state) = PAUSED, mi(artist) + \" - \" + mi(title), \"*** NOTHING PLAYING - TAP EJECT ***\")$",
         "text_size": 13.0,
-        "paint_color": "#FF00FF66"
+        "paint_color": "#FF00FFAA"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "SeekBar_Track",
+        "internal_title": "SeekBar_Glass_Track",
         "position_offset_y": 42.0,
         "shape_type": "RECT",
-        "shape_width": 642.0,
+        "shape_width": 650.0,
         "shape_height": 12.0,
-        "paint_color": "#FF0C0F12"
+        "shape_corners": 6.0,
+        "paint_color": "#4D000000"
       },
       {
         "internal_type": "ProgressModule",
-        "internal_title": "SeekBar_Progress",
+        "internal_title": "SeekBar_Liquid_Progress",
         "position_offset_y": 42.0,
         "progress_mode": "MUSIC",
-        "progress_width": 638.0,
+        "progress_width": 646.0,
         "progress_height": 8.0,
-        "paint_color": "#FF00DD55"
+        "shape_corners": 4.0,
+        "paint_color": "#E600FFAA"
       },
       {
         "internal_type": "TextModule",
@@ -389,7 +414,7 @@
         "position_offset_y": 66.0,
         "text_expression": "$if(mi(album) != \"\", \"ALBUM: \" + mi(album) + \"  |  \", \"\") + \"VOL: \" + si(vol) + \"%\"$",
         "text_size": 11.0,
-        "paint_color": "#FFA0A6B2"
+        "paint_color": "#B3CBD5E1"
       },
       {
         "internal_type": "TextModule",
@@ -398,29 +423,29 @@
         "position_offset_y": 66.0,
         "text_expression": "$mi(package)$",
         "text_size": 11.0,
-        "paint_color": "#FF687182"
+        "paint_color": "#8094A3B8"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Prev_Bevel",
+        "internal_title": "Btn_Prev_Glass_Rim",
         "position_offset_x": -240.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
         "shape_width": 96.0,
         "shape_height": 42.0,
-        "shape_corners": 3.0,
-        "paint_color": "#FF3A3F4B"
+        "shape_corners": 10.0,
+        "paint_color": "#4DFFFFFF"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Prev_Face",
+        "internal_title": "Btn_Prev_Glass_Face",
         "position_offset_x": -240.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
-        "shape_width": 92.0,
-        "shape_height": 38.0,
-        "shape_corners": 2.0,
-        "paint_color": "#FF252830",
+        "shape_width": 94.0,
+        "shape_height": 40.0,
+        "shape_corners": 9.0,
+        "paint_color": "#33283244",
         "internal_events": [
           {
             "type": "SINGLE_TAP",
@@ -436,36 +461,42 @@
         "position_offset_y": 106.0,
         "text_expression": "|<<",
         "text_size": 15.0,
-        "paint_color": "#FFE0E0E0"
+        "paint_color": "#FFF8FAFC"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Play_Bevel",
+        "internal_title": "Btn_Play_Glass_Rim",
         "position_offset_x": -120.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
         "shape_width": 96.0,
         "shape_height": 42.0,
-        "shape_corners": 3.0,
-        "paint_color": "#FF3A3F4B"
+        "shape_corners": 10.0,
+        "paint_color": "#4DFFFFFF"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Play_Face",
+        "internal_title": "Btn_Play_Glass_Face",
         "position_offset_x": -120.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
-        "shape_width": 92.0,
-        "shape_height": 38.0,
-        "shape_corners": 2.0,
-        "paint_color": "#FF252830",
+        "shape_width": 94.0,
+        "shape_height": 40.0,
+        "shape_corners": 9.0,
+        "paint_color": "#33283244",
         "internal_events": [
           {
             "type": "SINGLE_TAP",
             "action": "MUSIC",
             "music_action": "PLAY_PAUSE"
           }
-        ]
+        ],
+        "internal_formulas": {
+          "paint_color": "$if(mi(state) = PLAYING, \"#4D00FFAA\", \"#33283244\")$"
+        },
+        "internal_toggles": {
+          "paint_color": 10
+        }
       },
       {
         "internal_type": "TextModule",
@@ -474,9 +505,9 @@
         "position_offset_y": 106.0,
         "text_expression": "\u25b6",
         "text_size": 18.0,
-        "paint_color": "#FFE0E0E0",
+        "paint_color": "#FFF8FAFC",
         "internal_formulas": {
-          "paint_color": "$if(mi(state) = PLAYING, \"#FF00FF66\", \"#FFE0E0E0\")$"
+          "paint_color": "$if(mi(state) = PLAYING, \"#FF00FFAA\", \"#FFF8FAFC\")$"
         },
         "internal_toggles": {
           "paint_color": 10
@@ -484,32 +515,38 @@
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Pause_Bevel",
+        "internal_title": "Btn_Pause_Glass_Rim",
         "position_offset_x": 0.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
         "shape_width": 96.0,
         "shape_height": 42.0,
-        "shape_corners": 3.0,
-        "paint_color": "#FF3A3F4B"
+        "shape_corners": 10.0,
+        "paint_color": "#4DFFFFFF"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Pause_Face",
+        "internal_title": "Btn_Pause_Glass_Face",
         "position_offset_x": 0.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
-        "shape_width": 92.0,
-        "shape_height": 38.0,
-        "shape_corners": 2.0,
-        "paint_color": "#FF252830",
+        "shape_width": 94.0,
+        "shape_height": 40.0,
+        "shape_corners": 9.0,
+        "paint_color": "#33283244",
         "internal_events": [
           {
             "type": "SINGLE_TAP",
             "action": "MUSIC",
             "music_action": "PLAY_PAUSE"
           }
-        ]
+        ],
+        "internal_formulas": {
+          "paint_color": "$if(mi(state) = PAUSED, \"#4D00FFAA\", \"#33283244\")$"
+        },
+        "internal_toggles": {
+          "paint_color": 10
+        }
       },
       {
         "internal_type": "TextModule",
@@ -518,9 +555,9 @@
         "position_offset_y": 106.0,
         "text_expression": "\u275a\u275a",
         "text_size": 15.0,
-        "paint_color": "#FFE0E0E0",
+        "paint_color": "#FFF8FAFC",
         "internal_formulas": {
-          "paint_color": "$if(mi(state) = PAUSED, \"#FF00FF66\", \"#FFE0E0E0\")$"
+          "paint_color": "$if(mi(state) = PAUSED, \"#FF00FFAA\", \"#FFF8FAFC\")$"
         },
         "internal_toggles": {
           "paint_color": 10
@@ -528,25 +565,25 @@
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Next_Bevel",
+        "internal_title": "Btn_Next_Glass_Rim",
         "position_offset_x": 120.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
         "shape_width": 96.0,
         "shape_height": 42.0,
-        "shape_corners": 3.0,
-        "paint_color": "#FF3A3F4B"
+        "shape_corners": 10.0,
+        "paint_color": "#4DFFFFFF"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Next_Face",
+        "internal_title": "Btn_Next_Glass_Face",
         "position_offset_x": 120.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
-        "shape_width": 92.0,
-        "shape_height": 38.0,
-        "shape_corners": 2.0,
-        "paint_color": "#FF252830",
+        "shape_width": 94.0,
+        "shape_height": 40.0,
+        "shape_corners": 9.0,
+        "paint_color": "#33283244",
         "internal_events": [
           {
             "type": "SINGLE_TAP",
@@ -562,29 +599,29 @@
         "position_offset_y": 106.0,
         "text_expression": ">>|",
         "text_size": 15.0,
-        "paint_color": "#FFE0E0E0"
+        "paint_color": "#FFF8FAFC"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Eject_Bevel",
+        "internal_title": "Btn_Eject_Glass_Rim",
         "position_offset_x": 240.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
         "shape_width": 96.0,
         "shape_height": 42.0,
-        "shape_corners": 3.0,
-        "paint_color": "#FF3A3F4B"
+        "shape_corners": 10.0,
+        "paint_color": "#4DFFFFFF"
       },
       {
         "internal_type": "ShapeModule",
-        "internal_title": "Btn_Eject_Face",
+        "internal_title": "Btn_Eject_Glass_Face",
         "position_offset_x": 240.0,
         "position_offset_y": 106.0,
         "shape_type": "RECT",
-        "shape_width": 92.0,
-        "shape_height": 38.0,
-        "shape_corners": 2.0,
-        "paint_color": "#FF252830",
+        "shape_width": 94.0,
+        "shape_height": 40.0,
+        "shape_corners": 9.0,
+        "paint_color": "#33283244",
         "internal_events": [
           {
             "type": "SINGLE_TAP",
@@ -600,7 +637,7 @@
         "position_offset_y": 106.0,
         "text_expression": "\u23cf",
         "text_size": 18.0,
-        "paint_color": "#FFE0E0E0"
+        "paint_color": "#FFF8FAFC"
       }
     ]
   }
